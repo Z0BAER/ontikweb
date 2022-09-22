@@ -1,0 +1,72 @@
+
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+	cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(../images/contact-us1.png);}
+.bg-two {background-image: url(../images/contact-us2.png);}
+
+
+.parent a { font-size: 16px; letter-spacing: 2px;  font-weight: 700;  text-decoration: none;  line-height: 40px;
+    display: none; width:200px;
+
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    /*cursor: pointer;
+    text-decoration: none;*/
+}
+
+.parent:hover .child, .parent:focus .child {
+   /* transform: scale(1.2);*/
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(235,19,55,0.50);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+		.
+
+

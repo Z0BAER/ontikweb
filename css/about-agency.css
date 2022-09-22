@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.agency-p{ font-size:40px; font-weight:500;  font-family: "Gotham-Bold"; line-height: 55px; color:#404041;}
+
+
+.agency-con-box-1{width: 2.33333333%;}
+
+.agency-con-box-2 {width: 18.666667%;}
+
+@media (min-width: 1200px){
+.container {width: 1400px;}
+}
+
+
+
+
+@media screen and (min-width:10px) and (max-width:600px) {
+.agency-p{ font-size:30px;  line-height: 35px;}
+.agency-con-box-2 {width: 50%;}
+}

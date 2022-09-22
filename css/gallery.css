@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.my-container-wrapper-gallery {  width: 90%;  display: block;  position: relative;  margin: 0px auto;   padding: 0;}
+.gallery-weare{ width:100%; position:relative; background-color:#1a252c; }
+.fun-text{font-size:60px; line-height:auto; position:fixed; color:#fff;  line-height: 54px;  margin-bottom: 20px;  letter-spacing: 0px;  font-weight: 700; font-style: normal; left:27%; top:40%; font-family: "Gotham-Bold"; z-index:3;}
+
+.img-01{ float:left; width:48%; display:block; clear:both; z-index:2;  position:relative;}
+.img-02{ float:right; width:45%; display:block; clear:both; z-index:7; position:relative;  margin-top:-11%;}
+.img-03{ float:left; width:48%; display:block; clear:both; z-index:2;  position:relative;  margin-top:-6%;}
+.img-04{ float:right; width:43%; display:block; clear:both; z-index:7;  position:relative;  margin-top:-26%; margin-bottom:14%}
+.img-05{ width:100%; display:block; clear:both; z-index:2;  position:relative; margin:0px auto;}
+
+.img-06{ float:right; width:50%; display:block; clear:both; z-index:2;  position:relative;  margin-top:6%; margin-bottom:0%}
+.img-07{ float:left; width:38%; display:block; clear:both; z-index:7; position:relative;  margin-top:-16%;}
+.img-08{ float:right; width:50%; display:block; clear:both; z-index:2;  position:relative;  margin-top:-19%; margin-bottom:0%}
+
+.img-09{ width:100%; display:block; clear:both; z-index:7;  position:relative; margin:0px auto; margin-top:10%; }
+
+
+@media screen and (min-width:10px) and (max-width:856px) {
+	
+	
+.img-01{ float:left; width:40%;}
+.img-02{ float:right; width:40%;}
+.img-03{ float:left; width:40%; }
+.img-04{ float:right; width:40%;}
+.img-05{ width:100%;}
+.img-06{ float:right; width:50%;}
+.img-07{ float:left; width:30%; }
+.img-08{ float:right; width:50%;}
+	
+}
+
+.bde{ height:60px; width:100%;}
+
+
+@media screen and (min-width:10px) and (max-width:650px) {
+.img-01{ float:left; width:46%;}
+.img-02{ float:right; width:46%;}
+.img-03{ float:left; width:46%; }
+.img-04{ float:right; width:46%;}
+.img-05{ width:100%;}
+.img-06{ float:right; width:55%;}
+.img-07{ float:left; width:33%; }
+.img-08{ float:right; width:55%;}
+	
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

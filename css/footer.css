@@ -1,0 +1,163 @@
+.st-content {background-color: #fff; z-index: 10; position: relative;}
+.st-main-footer {padding: 10px 0;}
+.st-sticky-footer {width: 100%; position: fixed; bottom: 0; left: 0;  background-color:#244d70; }
+/*border-bottom:12px solid#fff;*/
+.footer-text{font-size:70px;line-height:80px; white-space: pre-line; color: #136deb; display: block; letter-spacing: -1px;  font-weight:300;}
+.st-main-footer a{ color:#434343;}
+.foot-hei-40{ height:40px; clear:both; position:relative;}
+.foot-hei-100{ height:100px; clear:both; position:relative;}
+.arrow {display: inline-block; font-weight: 400; position: relative; transition: color .2s ease-out;}
+.arrow:not(.rotate) {padding-right: 62px;}
+.arrow {font-size: 18px;}
+
+/*.arrow {height: 52px;line-height: 52px;}*/
+.arrow arrow { display: block;  position: absolute;  right: 0;  top: 0;  -webkit-transform: translateX(attr(transform));  transform: translateX(var(--transform));}
+.arrow:not(.rotate) arrow { height: 52px; width: 52px;}
+.arrow arrow::before, .arrow arrow::after {  content: '';  display: block;  height: 100%;  left: 0;  position: absolute;  top: 0;  width: 100%;}
+.arrow.black arrow::before {background-image: url(../images/icons_arrow.svg);}
+.arrow arrow::before {background: url(../images/icons_arrow.svg) center center no-repeat; background-size: 15px auto;  z-index: 2;}
+.arrow.black arrow::after {border-color: #136deb;}
+.arrow arrow::after {border-style: solid;  border-width: 1px;  border-radius: 50%;  box-sizing: border-box;  -webkit-transition: background .2s,border .2s,-webkit-transform .2s; transition: background .2s,border .2s,transform .2s;}
+.arrow span {position:relative;	z-index:3;     line-height: 47px;}
+.arrow:hover arrow::after {border-color:transparent!important; -webkit-transform:scale(1.25)!important; transform:scale(1.25)!important}
+.arrow:not(.rotate) {padding-right:62px}
+.arrow:not(.black) arrow::after {border-color:#6a6c70}
+.arrow:not(.black):hover arrow::after {background:rgba(51, 124, 233, 0.8)}
+.arrow.black arrow::after {border-color:#6a6c70}
+.arrow.black:hover arrow::after {background:rgba(51, 124, 233, 0.8)}
+.fpo{ padding-left:0px;}
+.fpor{ padding-right:0px;}
+.copy {font-size: 18px;  line-height: 27px; color: #757574;   font-weight: 300;  position: relative; padding-right:10px; text-align:right;}
+.address{ position:relative; }
+.address p {font-size: 24px;  line-height: 39px; color: #136deb; font-weight:300;}
+.address p:first-of-type {margin-bottom: 20px; white-space: pre-line;}
+.address p a {transition: color .2s ease; color: #136deb;}
+.address p a {transition: color .2s ease; color: #136deb;}
+.address p a:hover{color:#6a6c70}
+.address p a::after {content: ''; display: block;}
+.social-hei{ height:40px; clear:both;}
+.social{ position:relative; float:right;}
+.social ul { display: flex;  position: relative; }
+.social ul li {list-style: none;}
+.social ul li a {width: 80px; height: 80px; background-color: #fff; text-align: center; line-height: 80px; font-size: 35px; margin: 0 10px; display: block; border-radius: 50%; position: relative; overflow: hidden; border: 1px solid #136deb; z-index: 1;}
+.social ul li a .icon {position: relative; color: #136deb; transition: .5s; z-index: 3;}
+.social ul li a:hover .icon {color: #fff; transform: rotateY(360deg);}
+.social ul li a:before {content: ""; position: absolute; top: 100%; left: 0; width: 100%; height: 100%; background: #136deb; transition: .5s; z-index: 2;}
+.social ul li a:hover:before {top: 0;}
+.social ul li:nth-child(1) a:before{background: #4267b2;}
+.social ul li:nth-child(2) a:before{background: #0c64c5;}
+.social ul li:nth-child(3) a:before {background: #136deb;}
+.social ul li:nth-child(4) a:before {background: #136deb;}
+
+
+@media screen and (max-width: 991px) {
+   .st-content {margin-bottom: 0 !important;}
+   .st-sticky-footer {position: relative;}
+}
+
+@media screen and (min-width:992px) and (max-width:1400px) {
+.st-main-footer {padding: 10px 0;}	
+}
+
+@media (min-width: 762px) and (max-width: 1200px){
+ .footer-text{font-size:52px; line-height: 30px;   margin-bottom: 30px;}
+}
+
+@media (min-width: 500px) and (max-width: 761px){
+
+	.footer-text{font-size:40px; line-height: 30px;   margin-bottom: 30px;}
+
+	.social {float: left!important;}
+
+	.copy{ text-align:left!important; padding-left:20px;} 
+
+
+
+.fpor {padding-left: 0px!important}
+
+}
+
+
+
+@media (min-width:1px) and (max-width: 499px){
+
+	.footer-text{font-size:29px; line-height: 10px;   margin-bottom: 20px;}
+
+
+
+}
+
+
+.social {position: relative; float: right;}
+
+
+
+.footer-social{}
+
+.footer-social ul.footer-social-menu{list-style-type:none; margin:0; padding:0; text-align:center; }
+.footer-social ul.footer-social-menu li{ display:inline; margin-right:25px;}
+.footer-social ul.footer-social-menu li a{position:relative; color:#fff; padding-bottom:5px; text-decoration:none; font-size:25px; font-family: 'NexaHeavy'; }
+.footer-social ul.footer-social-menu li a:hover{ border-bottom:3px solid #d07b80;}
+
+
+/*
+.lin-amimation{background-image: linear-gradient(to right, #fff 50%, #0077b5 50%, #0077b5); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition:0.5s ease-out;}
+.lin-amimation:hover{background-position:-100%;  }
+
+.ins-amimation{background-image: linear-gradient(to right, #fff 50%, #c32aa3 50%, #c32aa3); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition:0.5s ease-out;}
+.ins-amimation:hover{background-position:-100%;  }
+
+
+.face-amimation{background-image: linear-gradient(to right, #fff 50%, #3b5998 50%, #3b5998); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition:0.5s ease-out;}
+.face-amimation:hover{background-position:-100%;  }
+
+
+.twi-amimation{background-image: linear-gradient(to right, #fff 50%, #1da1f2 50%, #1da1f2); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition:0.5s ease-out;}
+.twi-amimation:hover{background-position:-100%;  }
+
+
+.bhe-amimation{background-image: linear-gradient(to right, #fff 50%, #1da1f2 50%, #1da1f2); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition:0.5s ease-out;}
+.bhe-amimation:hover{background-position:-100%;  }
+
+*/
+
+
+
+.copy-textN{line-height: 20px;  color: #fff;  margin-bottom: 10px; font-weight: 400;  font-style: normal; font-size:17px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
